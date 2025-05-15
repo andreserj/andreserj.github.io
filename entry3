@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why I scan things that don’t matter</title>
+  <style>
+    body {
+      background: #0e0e0e;
+      color: #ffffff;
+      font-family: 'Helvetica Neue', sans-serif;
+      padding: 2rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: auto;
+    }
+    a {
+      color: #999;
+      text-decoration: none;
+    }
+    a:hover {
+      border-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html">← Back to Blog</a>
+  <h1>At peace and on fire</h1>
+  <p><em>May 9, 2025</em></p>
+  <p>Ephemera feels like the only honest thing sometimes. Gum wrappers, receipts, the corner of a torn flyer — they hold a version of me that doesn’t perform.</p>
+  <p>Sometimes I think I’m archiving the pieces of a self I haven’t lived yet — a quiet life made of images no one else thinks to keep.</p>
+</body>
+</html>

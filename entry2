@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes on stillness</title>
+  <style>
+    body {
+      background: #0e0e0e;
+      color: #ffffff;
+      font-family: 'Helvetica Neue', sans-serif;
+      padding: 2rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: auto;
+    }
+    a {
+      color: #999;
+      text-decoration: none;
+    }
+    a:hover {
+      border-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html">← Back to Blog</a>
+  <h1>I live up in the air and i don't belong to any country</h1>
+  <p><em>May 13, 2025</em></p>
+  <p>Stillness isn’t silence. It’s a hum. A low, aching presence that asks nothing from you but your breath.</p>
+  <p>It’s the absence of reaction, not the absence of emotion. Stillness listens. Stillness witnesses.</p>
+</body>
+</html>

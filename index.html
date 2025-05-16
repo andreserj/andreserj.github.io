@@ -5,46 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oro y sangre</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <style>
+    /* Font-face declarations for PPFraktionMono */
+    @font-face {
+      font-family: 'PPFraktionMono';
+      src: url('fonts/PPFraktionMono-Regular.woff2') format('woff2');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'PPFraktionMono';
+      src: url('fonts/PPFraktionMono-Bold.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'PPFraktionMono';
+      src: url('fonts/PPFraktionMono-Light.woff2') format('woff2');
+      font-weight: 300;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
       padding: 0;
       background: #0e0e0e;
       color: #ffffff;
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'PPFraktionMono', monospace;
       line-height: 1.6;
     }
+
     .container {
       max-width: 700px;
       margin: 0 auto;
       padding: 4rem 2rem;
+      position: relative;
     }
+
     article {
       margin-bottom: 3rem;
       padding-bottom: 2rem;
     }
+
     article h2 {
       font-weight: 400;
       font-size: 1.4rem;
       margin-bottom: 0.2rem;
     }
+
     article time {
       font-size: 0.85rem;
       color: #888;
       display: block;
       margin-bottom: 0.4rem;
+      font-weight: 300;
     }
+
     article p {
       margin-top: 0.4rem;
       font-size: 1rem;
       color: #ccc;
     }
+
     a {
       color: #ffffff;
       text-decoration: none;
     }
+
     a:hover {
       border-bottom: 1px solid #999;
+    }
+
+    /* Instagram link in bottom right */
+    .instagram-link {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      text-decoration: none;
+      font-family: 'PPFraktionMono', monospace;
+    }
+    .instagram-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -68,5 +112,8 @@
       <p>Ephemera feels like the only honest thing sometimes. Gum wrappers, receipts, the corner of a torn flyer — they hold a version of me that doesn’t perform.</p>
     </article>
   </div>
+
+  <!-- Instagram link -->
+  <a class="instagram-link" href="https://instagram.com/serj__eo" target="_blank">Instagram</a>
 </body>
 </html>

@@ -13,29 +13,65 @@
       color: #ffffff;
       font-family: 'Helvetica Neue', sans-serif;
       line-height: 1.6;
+      font-size: 1.1rem;
     }
+
+    .layout {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .layout {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2rem 3rem;
+      }
+    }
+
     .container {
       max-width: 700px;
-      margin: 0;
-      padding: 1.5rem 2rem;
+      padding-right: 2rem;
     }
+
     @media (min-width: 768px) {
       .container {
         margin-left: -0.5rem;
+        flex: 1;
       }
     }
+
     h1 {
       font-weight: 400;
-      font-size: 2.0rem;
+      font-size: 2rem;
       margin-bottom: 2rem;
       letter-spacing: 0.5px;
     }
+
     p {
       font-size: 1.1rem;
       color: #ccc;
       text-align: justify;
       margin-bottom: 1.6rem;
     }
+
+    .portrait {
+      width: 100%;
+      max-width: 500px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .portrait {
+        margin-top: 0;
+      }
+    }
+
     .footer-bar {
       position: fixed;
       bottom: 0;
@@ -50,22 +86,28 @@
       box-sizing: border-box;
       z-index: 10;
     }
+
     .footer-bar a {
       color: #fff;
       font-size: 1.1rem;
       text-decoration: none;
     }
+
     .footer-bar a:hover {
       text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Proem + about me</h1>
-    <p>Sergio is a First-Generation Latino-American Writer and Creative. His work blends introspection with cultural memory, often guided by quiet moments and the tension between dual identities. He is drawn to the intricacy in perception and interpretation, and believes the most honest creative work often begins where language fails.</p>
-    <p>With roots in marketing, film, and design, Sergio explores identity, desire, and dissonance across mediums—always chasing a specific feeling rather than form. Emotional, layered, and certain, shaped by a deep commitment to stillness, truth, and tonal clarity.</p>
-    <p>Las Vegas</p>
+  <div class="layout">
+    <div class="container">
+      <h1>Proem + about me</h1>
+      <p>Sergio is a First-Generation Latino-American Writer and Creative. His work blends introspection with cultural memory, often guided by quiet moments and the tension between dual identities. He is drawn to the intricacy in perception and interpretation, and believes the most honest creative work often begins where language fails.</p>
+      <p>With roots in marketing, film, and design, Sergio explores identity, desire, and dissonance across mediums—always chasing a specific feeling rather than form. Emotional, layered, and certain, shaped by a deep commitment to stillness, truth, and tonal clarity.</p>
+      <p>Las Vegas</p>
+    </div>
+
+    <img src="images/sergio.jpg" class="portrait">
   </div>
 
   <div class="footer-bar">

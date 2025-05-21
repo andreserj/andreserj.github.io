@@ -19,7 +19,7 @@
     .container {
       max-width: 700px;
       margin: 0;
-      padding: 1.5rem 2rem;
+      padding: 1.5rem 2rem; /* Original, works for both desktop & mobile */
     }
 
     @media (min-width: 768px) {
@@ -51,7 +51,7 @@
       margin-top: 0.4rem;
       font-size: 1.1rem;
       color: #ccc;
-      text-align: justify;
+      text-align: justify; /* Always justified */
     }
 
     a {
@@ -73,7 +73,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 2rem; /* Desktop default */
+      padding: 0 2rem; /* ✅ Desktop stays at 2rem */
       box-sizing: border-box;
       z-index: 10;
     }
@@ -84,14 +84,9 @@
       text-decoration: none;
     }
 
-    /* ✅ Mobile-only adjustments */
     @media (max-width: 767px) {
       .footer-bar {
-        padding: 0 1.5rem; /* Match container padding */
-      }
-
-      article p {
-        text-align: left; /* Better readability on mobile */
+        padding: 0 1.5rem; /* ✅ Only mobile footer changes */
       }
     }
   </style>

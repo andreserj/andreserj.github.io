@@ -19,7 +19,7 @@
     .container {
       max-width: 700px;
       margin: 0;
-      padding: 1.5rem 2rem; /* Original, works for both desktop & mobile */
+      padding: 1.5rem 2rem;
     }
 
     @media (min-width: 768px) {
@@ -51,7 +51,7 @@
       margin-top: 0.4rem;
       font-size: 1.1rem;
       color: #ccc;
-      text-align: justify; /* Always justified */
+      text-align: justify;
     }
 
     a {
@@ -69,11 +69,12 @@
       left: 0;
       width: 100%;
       height: 50px;
-      background: #000;
+      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.6); /* Frosted glass effect */
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 1.5rem; /* ✅ Desktop stays at 2rem */
+      padding: 0 1.5rem; /* Desktop padding */
       box-sizing: border-box;
       z-index: 10;
     }
@@ -86,7 +87,7 @@
 
     @media (max-width: 767px) {
       .footer-bar {
-        padding: 0 2rem; /* ✅ Only mobile footer changes */
+        padding: 0 2rem; /* Mobile padding */
       }
     }
   </style>

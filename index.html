@@ -28,13 +28,6 @@
       }
     }
 
-    /* ✅ Mobile-only: match footer bar spacing */
-    @media (max-width: 767px) {
-      .container {
-        padding: 1.5rem 1.5rem;
-      }
-    }
-
     article {
       margin-bottom: 3rem;
       padding-bottom: .5rem;
@@ -88,6 +81,18 @@
     .footer-bar a {
       color: #fff;
       font-size: 1.1rem;
+    }
+
+    /* ✅ Mobile: match container to footer padding */
+    @media (max-width: 767px) {
+      .container {
+        padding: 1.5rem 1.5rem;
+      }
+
+      /* ✅ Mobile: left-align paragraphs */
+      article p {
+        text-align: left;
+      }
     }
   </style>
 </head>

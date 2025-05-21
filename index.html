@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Oro y sangre</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
@@ -30,7 +30,7 @@
 
     article {
       margin-bottom: 3rem;
-      padding-bottom: .5rem;
+      padding-bottom: 0.5rem;
     }
 
     article h2 {
@@ -73,7 +73,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0 1.5rem;
+      padding: 0 2rem; /* Desktop default */
       box-sizing: border-box;
       z-index: 10;
     }
@@ -81,17 +81,17 @@
     .footer-bar a {
       color: #fff;
       font-size: 1.1rem;
+      text-decoration: none;
     }
 
-    /* ✅ Mobile: match container to footer padding */
+    /* ✅ Mobile-only adjustments */
     @media (max-width: 767px) {
-      .container {
-        padding: 1.5rem 1.5rem;
+      .footer-bar {
+        padding: 0 1.5rem; /* Match container padding */
       }
 
-      /* ✅ Mobile: left-align paragraphs */
       article p {
-        text-align: left;
+        text-align: left; /* Better readability on mobile */
       }
     }
   </style>

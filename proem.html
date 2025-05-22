@@ -56,7 +56,8 @@
       left: 0;
       width: 100%;
       height: 50px;
-      background: #000;
+      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.6);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -74,6 +75,12 @@
     .footer-bar a:hover {
       text-decoration: none;
     }
+
+    @media (max-width: 767px) {
+      .footer-bar {
+        padding: 0 2rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -88,7 +95,7 @@
 
   <div class="footer-bar">
     <a href="index.html">Home</a>
-    <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+    <a href="https://instagram.com/serj__eo" target="_blank">Instagram</a>
   </div>
 </body>
 </html>

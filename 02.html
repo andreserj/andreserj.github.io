@@ -9,21 +9,54 @@
       background: #000000;
       color: #ffffff;
       font-family: 'Helvetica Neue', sans-serif;
-      padding: 2rem;
-      line-height: 1.6;
-      max-width: 700px;
-      margin: auto;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      font-size: 1.1rem;
     }
-    a {
+
+    .container {
+      max-width: 700px;
+      padding: 1.5rem 2rem;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        margin-left: -0.5rem;
+      }
+    }
+
+    a.back {
       color: #999;
       text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+      margin-top: 1.5rem;
+      margin-left: 2rem;
+    }
+
+    p.meta {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <a href="index.html">← Atrás</a>
-  <p style="font-style: normal; font-size: 0.85rem; color: #888;">April 15, 2025</p>
-  <p>Stillness isn’t silence. It’s a hum. A low, aching presence that asks nothing from you but your breath.</p>
-  <p>It’s the absence of reaction, not the absence of emotion. Stillness listens. Stillness witnesses.</p>
+  <a href="index.html" class="back">← Atrás</a>
+
+  <div class="container">
+    <p class="meta">April 15, 2025</p>
+
+    <p>Stillness isn’t silence. It’s a hum. A low, aching presence that asks nothing from you but your breath.</p>
+
+    <p>It’s the absence of reaction, not the absence of emotion. Stillness listens. Stillness witnesses.</p>
+  </div>
 </body>
 </html>

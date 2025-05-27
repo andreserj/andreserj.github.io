@@ -9,21 +9,56 @@
       background: #000000;
       color: #ffffff;
       font-family: 'Helvetica Neue', sans-serif;
-      padding: 2rem;
-      line-height: 1.6;
-      max-width: 700px;
-      margin: auto;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
+      font-size: 1.1rem;
     }
-    a {
+
+    .container {
+      max-width: 700px;
+      padding: 1.5rem 2rem;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        margin-left: -0.5rem;
+      }
+    }
+
+    a.back {
       color: #999;
       text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+      margin-top: 1.5rem;
+      margin-left: 2rem;
+    }
+
+    p.meta {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <a href="index.html">← Atrás</a>
-  <p style="font-style: normal; font-size: 0.85rem; color: #888;">May 9, 2025</p>
-  <p>Ephemera feels like the only honest thing sometimes. Gum wrappers, receipts, the corner of a torn flyer — they hold a version of me that doesn’t perform.</p>
-  <p>Sometimes I think I’m archiving the pieces of a self I haven’t lived yet — a quiet life made of images no one else thinks to keep.</p>
+  <a href="index.html" class="back">← Atrás</a>
+
+  <div class="container">
+    <p class="meta">May 9, 2025</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+
+    <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+
+    <p>Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+  </div>
 </body>
 </html>

@@ -9,30 +9,56 @@
       background: #000000;
       color: #ffffff;
       font-family: 'Helvetica Neue', sans-serif;
-      padding: 2rem;
+      margin: 0;
+      padding: 0;
       line-height: 1.7;
-      max-width: 700px;
-      margin: auto;
+      font-size: 1.1rem;
     }
-    a {
+
+    .container {
+      max-width: 700px;
+      padding: 1.5rem 2rem;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        margin-left: -0.5rem;
+      }
+    }
+
+    a.back {
       color: #999;
       text-decoration: none;
+      font-size: 1rem;
+      display: inline-block;
+      margin-top: 1.5rem;
+      margin-left: 2rem;
     }
+
     p.meta {
       font-size: 0.85rem;
       color: #888;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <a href="index.html">← Atrás</a>
-  <p class="meta">May 26, 2025</p>
+  <a href="index.html" class="back">← Atrás</a>
 
-  <p>Reacquainting myself with the person I’m quietly becoming. There's a rhythm, not out of resignation, but recognition. Long enough to know that most answers aren't urgent, and that understanding often arrives long after the need for it has passed. The self-inquiry that once felt like excavation has become something gentler—a tending to or maintenance. Not expecting resolution from most tensions, nor clarity from all aches. Some things just like accompanying.</p>
+  <div class="container">
+    <p class="meta">May 26, 2025</p>
 
-  <p>Sobriety has made that more obvious. Fewer illusions to find comforting. Insecurities, out of habit more than hope—just part of the architecture now—and that’s fine.</p>
+    <p>Reacquainting myself with the person I’m quietly becoming. There's a rhythm, not out of resignation, but recognition. Long enough to know that most answers aren't urgent, and that understanding often arrives long after the need for it has passed. The self-inquiry that once felt like excavation has become something gentler—a tending to or maintenance. Not expecting resolution from most tensions, nor clarity from all aches. Some things just like accompanying.</p>
 
-  <p>Not everything demands interpretation and some truths arrive late. Still, I sit with them. I watch the light shift across the room and let most moments decide what they wanna be.</p>
+    <p>Sobriety has made that more obvious. Fewer illusions to find comforting. Insecurities, out of habit more than hope—just part of the architecture now—and that’s fine.</p>
 
+    <p>Not everything demands interpretation and some truths arrive late. Still, I sit with them. I watch the light shift across the room and let most moments decide what they wanna be.</p>
+  </div>
 </body>
 </html>
